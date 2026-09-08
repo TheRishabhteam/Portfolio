@@ -523,14 +523,46 @@ loadRrweb();
           <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><strong>Location</strong><div class="section-sub">India</div></div></div>
         </div>
         <div class="glass-card reveal">
-          <form class="contact-form" onsubmit="event.preventDefault(); const name=document.getElementById('name').value || 'there'; alert('Thanks, '+name+'! Your message is ready to be shared. Please email or connect via WhatsApp/LinkedIn for a fast response.'); this.reset();">
-            <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
-            <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="your@email.com" required></div>
-            <div class="field"><label for="project">Project Type</label><select id="project"><option>WordPress Website</option><option>Website Revamp</option><option>WooCommerce Store</option><option>UI/UX Design</option><option>SEO & Speed Optimization</option><option>Remote Role Opportunity</option></select></div>
-            <div class="field"><label for="budget">Budget</label><select id="budget"><option>$500 - $1,000</option><option>$1,000 - $3,000</option><option>$3,000 - $5,000</option><option>$5,000+</option><option>Let’s Discuss</option></select></div>
-            <div class="field full"><label for="message">Message</label><textarea id="message" placeholder="Tell me about your project, business goals, and timeline"></textarea></div>
-            <div class="field full"><button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Inquiry</button></div>
-          </form>
+          <form class="contact-form" action="https://formspree.io/f/xjyvanyq" method="POST">
+    <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+    </div>
+    <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="your@email.com" required>
+    </div>
+    <div class="field">
+        <label for="project">Project Type</label>
+        <select id="project" name="project">
+            <option>WordPress Website</option>
+            <option>Website Revamp</option>
+            <option>WooCommerce Store</option>
+            <option>UI/UX Design</option>
+            <option>SEO & Speed Optimization</option>
+            <option>Remote Role Opportunity</option>
+        </select>
+    </div>
+    <div class="field">
+        <label for="budget">Budget</label>
+        <select id="budget" name="budget">
+            <option>$500 - $1,000</option>
+            <option>$1,000 - $3,000</option>
+            <option>$3,000 - $5,000</option>
+            <option>$5,000+</option>
+            <option>Let's Discuss</option>
+        </select>
+    </div>
+    <div class="field full">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project, business goals, and timeline" required></textarea>
+    </div>
+    <div class="field full">
+        <button class="btn btn-primary" type="submit">
+            <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+        </button>
+    </div>
+</form>
         </div>
       </div>
     </div>
