@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rishabh Sharma | WordPress Developer & AI Tool Builder</title>
+<meta name="description" content="Rishabh Sharma — WordPress Developer with 5+ years of experience. Custom themes & plugins, Elementor Pro, WooCommerce, REST API integrations, Core Web Vitals, and AI tools that generate Elementor & HTML websites. 40+ live websites delivered.">
+<meta property="og:title" content="Rishabh Sharma | WordPress Developer & AI Tool Builder">
+<meta property="og:description" content="Custom WordPress themes & plugins, Elementor Pro, WooCommerce, performance, and AI-powered website tools.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/rishabh.jpg">
+<meta name="theme-color" content="#0b0d17">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236d5efc'/%3E%3Cstop offset='1' stop-color='%2300d4c8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial' font-size='28' font-weight='900' text-anchor='middle' fill='white'%3ERS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script>document.documentElement.className='js';</script>
+<style>
+:root{--bg:#0b0d17;--bg2:#10142a;--card:rgba(255,255,255,.045);--bd:rgba(255,255,255,.1);--tx:#eef0ff;--mu:#9aa0c3;--p:#6d5efc;--t:#00d4c8;--w:#ffb454;--grad:linear-gradient(135deg,#6d5efc,#00d4c8);--r:20px}
+:root[data-theme=light]{--bg:#f6f7ff;--bg2:#ecefff;--card:#fff;--bd:rgba(20,24,60,.1);--tx:#12163a;--mu:#5a6088}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Space Grotesk',Inter,sans-serif;line-height:1.12;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}ul{list-style:none}
+.ctr{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:100px 0;position:relative}
+section[id]{scroll-margin-top:70px}
+.grad-t{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--t);margin-bottom:14px}
+.eyebrow:before{content:"";width:26px;height:2px;background:var(--grad)}
+.sec-h{font-size:clamp(30px,4.4vw,52px);margin-bottom:14px}
+.sec-p{color:var(--mu);max-width:640px;font-size:17px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:99px;font-weight:600;font-size:15px;border:1.5px solid transparent;cursor:pointer;transition:.3s;font-family:inherit}
+.btn-p{background:var(--grad);color:#fff;box-shadow:0 10px 30px rgba(109,94,252,.35)}
+.btn-p:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(109,94,252,.5)}
+.btn-g{border-color:var(--bd);color:var(--tx);background:var(--card)}
+.btn-g:hover{border-color:var(--t);color:var(--t);transform:translateY(-3px)}
+.reveal{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;transition:.35s}
+nav.sc{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);padding:9px 0}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:11px;font:700 18px 'Space Grotesk',sans-serif}
+.logo-m{width:40px;height:40px;border-radius:12px;background:var(--grad);display:grid;place-items:center;color:#fff;font:700 17px 'Space Grotesk';letter-spacing:-.04em;box-shadow:0 6px 18px rgba(109,94,252,.4)}
+.nav-l{display:flex;align-items:center;gap:28px}
+.nav-l a.nl{font-size:14px;color:var(--mu);font-weight:500;transition:.2s}
+.nav-l a.nl:hover,.nav-l a.nl.on{color:var(--tx)}
+.tg{width:40px;height:40px;border-radius:50%;border:1px solid var(--bd);background:var(--card);color:var(--tx);cursor:pointer;font-size:15px}
+#burger{display:none}
+@media(max-width:860px){#burger{display:grid;place-items:center}.nav-l{position:fixed;inset:64px 0 auto 0;background:var(--bg2);flex-direction:column;padding:22px;gap:18px;border-bottom:1px solid var(--bd);transform:translateY(-130%);transition:.35s;align-items:flex-start}.nav-l.open{transform:none}}
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:130px 0 80px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(110px);opacity:.38;pointer-events:none}
+.b1{width:560px;height:560px;background:var(--p);top:-140px;right:-120px}
+.b2{width:440px;height:440px;background:var(--t);bottom:-160px;left:-120px;opacity:.22}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 72%);-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 20%,transparent 72%);opacity:.5}
+.hero-g{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hi{display:inline-flex;gap:10px;align-items:center;padding:8px 16px;border-radius:99px;border:1px solid var(--bd);background:var(--card);font-size:13px;font-weight:500;margin-bottom:22px}
+.dot{width:9px;height:9px;border-radius:50%;background:#2ee59d;box-shadow:0 0 0 0 rgba(46,229,157,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(46,229,157,0)}100%{box-shadow:0 0 0 0 rgba(46,229,157,0)}}
+.hero h1{font-size:clamp(40px,6.4vw,84px);margin-bottom:18px}
+.role{font:500 clamp(16px,2vw,22px) 'JetBrains Mono',monospace;color:var(--mu);min-height:36px;margin-bottom:18px}
+.role b{color:var(--t);font-weight:500}.caret{display:inline-block;width:2px;height:1.1em;background:var(--t);margin-left:3px;vertical-align:-3px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.hero p.lead{color:var(--mu);font-size:18px;max-width:560px;margin-bottom:32px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.soc{display:flex;gap:12px}.soc a{width:44px;height:44px;border-radius:50%;border:1px solid var(--bd);background:var(--card);display:grid;place-items:center;transition:.3s;font-size:17px}
+.soc a:hover{background:var(--grad);color:#fff;border-color:transparent;transform:translateY(-4px)}
+.photo{position:relative;max-width:420px;margin:0 auto}
+.photo:before{content:"";position:absolute;inset:-14px;border-radius:32px;background:var(--grad);opacity:.6;filter:blur(30px);animation:fl 6s ease-in-out infinite}
+.photo-f{position:relative;border-radius:30px;overflow:hidden;border:1px solid var(--bd);aspect-ratio:4/4.6;background:var(--bg2)}
+.photo-f img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+@keyframes fl{50%{transform:translateY(-10px) scale(1.02)}}
+.fchip{position:absolute;padding:11px 16px;border-radius:16px;background:color-mix(in srgb,var(--bg2) 88%,transparent);backdrop-filter:blur(12px);border:1px solid var(--bd);font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center;box-shadow:0 14px 34px rgba(0,0,0,.3);animation:fl 5s ease-in-out infinite}
+.fchip i{color:var(--t)}.fc1{left:-26px;top:16%}.fc2{right:-22px;bottom:22%;animation-delay:-2s}.fc3{left:8%;bottom:-18px;animation-delay:-3.5s}
+@media(max-width:900px){.hero-g{grid-template-columns:1fr}.photo{max-width:340px;order:-1}.fc1{left:-8px}.fc2{right:-8px}}
+/* stats */
+.stats{padding:0;margin-top:-30px;z-index:2}
+.stats-g{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden}
+.st{background:var(--bg2);padding:30px 22px;text-align:center}
+.st b{display:block;font:700 clamp(32px,4vw,48px) 'Space Grotesk';background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.st span{color:var(--mu);font-size:14px}
+@media(max-width:700px){.stats-g{grid-template-columns:1fr 1fr}}
+/* marquee */
+.mq{overflow:hidden;padding:46px 0 0;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq-t{display:flex;gap:14px;width:max-content;animation:mq 38s linear infinite}
+.mq:hover .mq-t{animation-play-state:paused}
+.mq span{padding:10px 20px;border-radius:99px;border:1px solid var(--bd);background:var(--card);font-size:14px;font-weight:500;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* about */
+.about-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:28px;transition:.35s}
+.card:hover{transform:translateY(-6px);border-color:color-mix(in srgb,var(--p) 55%,transparent);box-shadow:0 22px 50px rgba(0,0,0,.25)}
+.hl{display:grid;gap:14px;margin-top:26px}
+.hl div{display:flex;gap:14px;align-items:flex-start}
+.hl i{width:40px;height:40px;border-radius:12px;background:color-mix(in srgb,var(--p) 18%,transparent);color:var(--t);display:grid;place-items:center;flex-shrink:0}
+.hl b{display:block;font-size:15px}.hl span{color:var(--mu);font-size:14px}
+@media(max-width:860px){.about-g{grid-template-columns:1fr}}
+/* services */
+.sv-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:46px}
+.ico{width:56px;height:56px;border-radius:16px;background:var(--grad);display:grid;place-items:center;color:#fff;font-size:22px;margin-bottom:18px;box-shadow:0 10px 24px rgba(109,94,252,.35)}
+.sv-g h3{font-size:20px;margin-bottom:8px}.sv-g p{color:var(--mu);font-size:14.5px}
+/* skills */
+.sk-g{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:46px}
+.sk-g h3{font-size:17px;margin-bottom:16px;display:flex;gap:10px;align-items:center}.sk-g h3 i{color:var(--t)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{padding:6px 13px;border-radius:99px;font-size:13px;background:color-mix(in srgb,var(--p) 14%,transparent);border:1px solid color-mix(in srgb,var(--p) 30%,transparent)}
+/* projects */
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:34px 0 36px}
+.fb{padding:10px 20px;border-radius:99px;border:1px solid var(--bd);background:var(--card);color:var(--mu);font:600 14px Inter;cursor:pointer;transition:.25s}
+.fb:hover{color:var(--tx)}.fb.on{background:var(--grad);color:#fff;border-color:transparent}
+.pj-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:24px}
+.pj{display:flex;flex-direction:column;padding:0;overflow:hidden}
+.pj.hide{display:none}
+.pj-top{height:190px;position:relative;display:grid;place-items:center;overflow:hidden}
+.pj-top:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.28),transparent 55%)}
+.pj-top>i{font-size:62px;color:rgba(255,255,255,.92);position:relative;filter:drop-shadow(0 8px 16px rgba(0,0,0,.25));transition:.5s}
+.pj:hover .pj-top>i{transform:scale(1.14) rotate(-4deg)}
+.bar{position:absolute;top:14px;left:14px;display:flex;gap:6px}.bar b{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.55)}
+.dom{position:absolute;bottom:14px;left:14px;right:14px;padding:7px 12px;border-radius:10px;background:rgba(0,0,0,.28);backdrop-filter:blur(6px);color:#fff;font:500 12px 'JetBrains Mono',monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pj-b{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pj-b small{font:500 11px 'JetBrains Mono';letter-spacing:.12em;text-transform:uppercase;color:var(--t)}
+.pj-b h3{font-size:20px}.pj-b p{color:var(--mu);font-size:14.5px;flex:1}
+.pj-b .tags span{font-size:12px;padding:4px 11px}
+.pj-l{font-weight:600;font-size:14px;color:var(--t);display:inline-flex;gap:8px;align-items:center;margin-top:6px}
+.pj-l:hover{gap:13px}
+.g1{background:linear-gradient(135deg,#6d5efc,#3b2fd4)}.g2{background:linear-gradient(135deg,#00b4a6,#007c8f)}.g3{background:linear-gradient(135deg,#ff7a59,#d6336c)}.g4{background:linear-gradient(135deg,#f5a623,#e0661a)}.g5{background:linear-gradient(135deg,#2b6cff,#1236a8)}.g6{background:linear-gradient(135deg,#22c55e,#0f7a46)}.g7{background:linear-gradient(135deg,#a855f7,#6d28d9)}.g8{background:linear-gradient(135deg,#0ea5e9,#6366f1)}
+.new{position:absolute;top:14px;right:14px;padding:4px 11px;border-radius:99px;background:#fff;color:#12163a;font:700 11px Inter;letter-spacing:.06em}
+/* timeline */
+.tl{position:relative;margin-top:46px;max-width:860px}
+.tl:before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--p),var(--t),transparent)}
+.ti{position:relative;padding:0 0 38px 46px}
+.ti:before{content:"";position:absolute;left:3px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:4px solid var(--t)}
+.ti .dt{font:500 12px 'JetBrains Mono';color:var(--t);letter-spacing:.08em}
+.ti h3{font-size:21px;margin:4px 0 2px}.ti .co{color:var(--mu);font-size:14.5px;margin-bottom:10px}
+.ti li{color:var(--mu);font-size:14.5px;padding-left:18px;position:relative;margin-bottom:6px}
+.ti li:before{content:"▹";position:absolute;left:0;color:var(--p)}
+/* contact */
+.ct{background:var(--bg2);border-radius:32px;border:1px solid var(--bd);padding:clamp(30px,5vw,70px);position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.ct:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:var(--p);filter:blur(120px);opacity:.28;top:-160px;right:-100px}
+.ct>*{position:relative}
+.cl{display:grid;gap:12px}
+.cl a{display:flex;gap:14px;align-items:center;padding:15px 18px;border-radius:16px;border:1px solid var(--bd);background:var(--card);transition:.3s;font-size:15px;word-break:break-all}
+.cl a:hover{border-color:var(--t);transform:translateX(6px)}
+.cl i{width:38px;height:38px;border-radius:11px;background:var(--grad);color:#fff;display:grid;place-items:center;flex-shrink:0}
+@media(max-width:860px){.ct{grid-template-columns:1fr}}
+footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mu);font-size:14px}
+.ft{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;font-size:28px;z-index:90;box-shadow:0 8px 26px rgba(37,211,102,.55);transition:.3s}.wa:hover{transform:scale(1.1)}
+#pb{position:fixed;top:0;left:0;height:3px;background:var(--grad);z-index:200;width:0}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="pb"></div>
+
+<nav id="nav"><div class="ctr nav-in">
+  <a href="#home" class="logo" aria-label="Rishabh Sharma"><span class="logo-m">RS</span><span>Rishabh<span class="grad-t">.dev</span></span></a>
+  <div class="nav-l" id="navl">
+    <a class="nl" href="#about">About</a><a class="nl" href="#services">Services</a><a class="nl" href="#skills">Skills</a><a class="nl" href="#work">Work</a><a class="nl" href="#experience">Experience</a>
+    <a class="btn btn-p" href="#contact" style="padding:10px 22px;font-size:14px;">Hire me</a>
+  </div>
+  <div style="display:flex;gap:10px;align-items:center;">
+    <button class="tg" id="theme" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+    <button class="tg" id="burger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</div></nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="grid-bg"></div>
+  <div class="ctr hero-g">
+    <div>
+      <div class="hi"><span class="dot"></span> Available immediately · Delhi NCR &amp; Remote</div>
+      <h1>Hi, I'm <span class="grad-t">Rishabh Sharma</span></h1>
+      <div class="role">&gt; <b id="typed"></b><span class="caret"></span></div>
+      <p class="lead">WordPress developer with 5+ years of experience building fast, secure, SEO-friendly websites for clients in the USA, UAE, Australia and India — and the creator of AI tools that generate Elementor and HTML websites in minutes.</p>
+      <div class="hero-btns">
+        <a href="#work" class="btn btn-p">View my work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="assets/Rishabh_Sharma_Senior_WordPress_Developer_CV.pdf" class="btn btn-g" download><i class="fa-solid fa-download"></i> Download CV</a>
+      </div>
+      <div class="soc">
+        <a href="https://www.linkedin.com/in/rishab-sharma-dev" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/TheRishabhteam" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/918851471308" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:rishabsharmadev6@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="photo-f"><img src="assets/rishabh.jpg" alt="Rishabh Sharma, WordPress Developer" width="760" height="873"></div>
+      <div class="fchip fc1"><i class="fa-brands fa-wordpress"></i> WordPress Expert</div>
+      <div class="fchip fc2"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Tool Builder</div>
+      <div class="fchip fc3"><i class="fa-solid fa-gauge-high"></i> Lighthouse 90+</div>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<div class="stats"><div class="ctr"><div class="stats-g">
+  <div class="st"><b data-n="5" data-s="+">0</b><span>Years of experience</span></div>
+  <div class="st"><b data-n="40" data-s="+">0</b><span>Live websites delivered</span></div>
+  <div class="st"><b data-n="80" data-s="+">0</b><span>Production issues resolved</span></div>
+  <div class="st"><b data-n="90" data-s="+">0</b><span>Lighthouse score (from ~60)</span></div>
+</div></div></div>
+
+<div class="mq" aria-hidden="true"><div class="mq-t" id="mq"></div></div>
+
+<!-- ABOUT -->
+<section id="about"><div class="ctr about-g">
+  <div class="reveal">
+    <div class="card" style="padding:34px;">
+      <div class="eyebrow">Quick facts</div>
+      <h3 style="font-size:26px;margin-bottom:18px;">Developer first, <span class="grad-t">builder of tools</span> too.</h3>
+      <div class="hl" style="margin-top:0">
+        <div><i class="fa-solid fa-location-dot"></i><p><b>New Delhi, India</b><span>Hybrid in Delhi NCR · Remote worldwide</span></p></div>
+        <div><i class="fa-solid fa-graduation-cap"></i><p><b>BCA — VIPS, New Delhi</b><span>Bachelor of Computer Applications</span></p></div>
+        <div><i class="fa-solid fa-language"></i><p><b>English &amp; Hindi</b><span>Comfortable with international clients</span></p></div>
+        <div><i class="fa-solid fa-bolt"></i><p><b>Immediate availability</b><span>Open to full-time, contract and freelance</span></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="reveal">
+    <div class="eyebrow">About me</div>
+    <h2 class="sec-h">Websites that load fast, <span class="grad-t">rank well</span> and convert.</h2>
+    <p class="sec-p" style="margin-bottom:16px;">I build and maintain WordPress websites for healthcare, wellness, e-learning, finance and enterprise clients — from custom themes and plugins in OOP PHP to Elementor builds, WooCommerce stores and REST API integrations.</p>
+    <p class="sec-p">I care about the details that matter in production: Core Web Vitals, Redis and CDN caching, secure code (sanitization, nonces, capability checks), Git-based staging to production, and on-time delivery. On the side, I build AI-assisted tools that speed up website creation for everyone.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;">
+      <a href="#contact" class="btn btn-p">Let's work together</a>
+      <a href="assets/Rishabh_Sharma_WordPress_Developer_CV.pdf" class="btn btn-g" download><i class="fa-solid fa-file-arrow-down"></i> WordPress Developer CV</a>
+    </div>
+  </div>
+</div></section>
+
+<!-- SERVICES -->
+<section id="services" style="background:var(--bg2)"><div class="ctr">
+  <div class="reveal"><div class="eyebrow">What I do</div><h2 class="sec-h">Services I <span class="grad-t">offer</span></h2><p class="sec-p">End-to-end WordPress work, from first sketch to post-launch support.</p></div>
+  <div class="sv-g">
+    <div class="card reveal"><div class="ico"><i class="fa-solid fa-code"></i></div><h3>Custom Themes &amp; Plugins</h3><p>OOP PHP, hooks, filters, custom post types, meta boxes and settings pages built to your exact requirements.</p></div>
+    <div class="card reveal"><div class="ico"><i class="fa-solid fa-pen-ruler"></i></div><h3>Elementor Pro Websites</h3><p>Pixel-accurate, responsive layouts with custom Elementor templates, global styles and clean structure.</p></div>
+    <div class="card reveal"><div class="ico"><i class="fa-solid fa-cart-shopping"></i></div><h3>WooCommerce &amp; LMS</h3><p>Stores, checkout customisations, payments, course platforms and membership content.</p></div>
+    <div class="card reveal"><div class="ico"><i class="fa-solid fa-plug-circle-bolt"></i></div><h3>API &amp; Booking Integrations</h3><p>REST API, custom endpoints, CRM sync, and booking systems like JaneApp, Healthie, Optimantra and Gettimely.</p></div>
+    <div class="card reveal"><div class="ico"><i class="fa-solid fa-gauge-high"></i></div><h3>Speed &amp; Core Web Vitals</h3><p>Redis, CDN, caching, WebP images and query optimisation to push Lighthouse scores to 90+.</p></div>
+    <div class="card reveal"><div class="ico"><i class="fa-solid fa-shield-halved"></i></div><h3>Security, Migration &amp; Care</h3><p>Malware cleanup, hardening, backups, Squarespace/other-platform to WordPress migration and maintenance.</p></div>
+  </div>
+</div></section>
+
+<!-- SKILLS -->
+<section id="skills"><div class="ctr">
+  <div class="reveal"><div class="eyebrow">Toolbox</div><h2 class="sec-h">Skills &amp; <span class="grad-t">technologies</span></h2></div>
+  <div class="sk-g">
+    <div class="card reveal"><h3><i class="fa-brands fa-wordpress"></i> WordPress</h3><div class="tags"><span>Custom Themes</span><span>Custom Plugins</span><span>Child Themes</span><span>Elementor Pro</span><span>Gutenberg</span><span>ACF</span><span>WPBakery</span><span>Divi</span><span>WPML</span><span>Multisite</span><span>WooCommerce</span><span>LMS</span><span>WP-CLI</span></div></div>
+    <div class="card reveal"><h3><i class="fa-solid fa-terminal"></i> Languages</h3><div class="tags"><span>PHP 7+</span><span>OOP PHP</span><span>MySQL</span><span>JavaScript</span><span>jQuery</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Tailwind CSS</span></div></div>
+    <div class="card reveal"><h3><i class="fa-solid fa-diagram-project"></i> Integrations</h3><div class="tags"><span>REST API</span><span>Custom Endpoints</span><span>CRM</span><span>JaneApp</span><span>Healthie</span><span>Optimantra</span><span>Gettimely</span><span>Payment Gateways</span><span>Flight Search API</span></div></div>
+    <div class="card reveal"><h3><i class="fa-solid fa-rocket"></i> Performance</h3><div class="tags"><span>Core Web Vitals</span><span>Lighthouse</span><span>GTmetrix</span><span>Redis</span><span>CDN</span><span>Caching</span><span>WebP</span></div></div>
+    <div class="card reveal"><h3><i class="fa-solid fa-lock"></i> Security &amp; SEO</h3><div class="tags"><span>Sanitization</span><span>Nonces</span><span>Capability Checks</span><span>Wordfence</span><span>SSL</span><span>Malware Cleanup</span><span>On-page SEO</span><span>Analytics</span><span>Search Console</span></div></div>
+    <div class="card reveal"><h3><i class="fa-solid fa-screwdriver-wrench"></i> Workflow</h3><div class="tags"><span>Git</span><span>GitHub</span><span>Staging → Production</span><span>cPanel</span><span>Figma</span><span>Postman</span><span>Agile</span><span>Shopify</span><span>Framer</span></div></div>
+  </div>
+</div></section>
+
+<!-- WORK -->
+<section id="work" style="background:var(--bg2)"><div class="ctr">
+  <div class="reveal"><div class="eyebrow">Portfolio</div><h2 class="sec-h">Selected <span class="grad-t">work</span></h2><p class="sec-p">Client websites, AI-powered tools and WordPress plugins I've built.</p></div>
+  <div class="filters reveal" id="filters">
+    <button class="fb on" data-f="all">All</button><button class="fb" data-f="client">Client Websites</button><button class="fb" data-f="ai">AI Tools</button><button class="fb" data-f="plugin">Plugins</button>
+  </div>
+  <div class="pj-g" id="pjg">
+
+    <article class="card pj reveal" data-c="ai"><div class="pj-top g7"><span class="new">NEW</span><i class="fa-solid fa-wand-magic-sparkles"></i><div class="dom">AI Website Builder Pro</div></div><div class="pj-b"><small>AI Tool · Web App</small><h3>AI Website Builder Pro</h3><p>Generates complete, unique business websites from a business name and industry. Free template mode for 20 industries plus an optional Claude AI mode, client photo upload, sliders, galleries and Google Maps copy-paste auto-fill.</p><div class="tags"><span>JavaScript</span><span>FastAPI</span><span>Claude API</span><span>Vercel</span></div></div></article>
+
+    <article class="card pj reveal" data-c="ai"><div class="pj-top g1"><i class="fa-solid fa-robot"></i><div class="dom">AI Page Builder for Elementor</div></div><div class="pj-b"><small>AI Tool · WordPress Plugin</small><h3>AI Elementor Page Builder</h3><p>Creates Home, About, Services, Testimonials and Contact pages automatically from a business name, industry and brand colours — editable in Elementor afterwards.</p><div class="tags"><span>PHP</span><span>Elementor</span><span>AI</span></div></div></article>
+
+    <article class="card pj reveal" data-c="ai"><div class="pj-top g8"><i class="fa-brands fa-html5"></i><div class="dom">AI HTML Website Generator</div></div><div class="pj-b"><small>AI Tool · Free &amp; Pro</small><h3>AI HTML Website Generator</h3><p>Turns a business brief into a complete HTML website, with manual customisation on top. Available in a free version and a paid version.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI</span></div></div></article>
+
+    <article class="card pj reveal" data-c="ai plugin"><div class="pj-top g3"><i class="fa-solid fa-table-columns"></i><div class="dom">AI Header &amp; Footer Builder</div></div><div class="pj-b"><small>AI Tool · Elementor</small><h3>AI Header &amp; Footer Builder</h3><p>Creates a matching header and footer in a single click for any design, so a new site gets its full layout frame instantly.</p><div class="tags"><span>Elementor</span><span>PHP</span><span>AI</span></div></div></article>
+
+    <article class="card pj reveal" data-c="plugin"><div class="pj-top g6"><i class="fa-solid fa-gauge-high"></i><div class="dom">Performance Booster Plugins</div></div><div class="pj-b"><small>WordPress Plugins</small><h3>Performance Booster Plugins</h3><p>A set of custom plugins focused on speed — caching, asset handling and optimisation tweaks aimed at better PageSpeed and Core Web Vitals.</p><div class="tags"><span>PHP</span><span>Caching</span><span>Core Web Vitals</span></div></div></article>
+
+    <article class="card pj reveal" data-c="plugin"><div class="pj-top g4"><i class="fa-solid fa-image"></i><div class="dom">WebP Image Optimizer</div></div><div class="pj-b"><small>WordPress Plugin</small><h3>Image Compressor &amp; WebP Converter</h3><p>Custom plugin that compresses images and converts them to WebP, improving PageSpeed scores with no manual work.</p><div class="tags"><span>PHP</span><span>WebP</span><span>Optimization</span></div></div></article>
+
+    <article class="card pj reveal" data-c="client"><div class="pj-top g2"><i class="fa-solid fa-spa"></i><div class="dom">mdmedspabelred.com</div></div><div class="pj-b"><small>Client · Redmond, WA, USA</small><h3>MD Med Spa Bel-Red</h3><p>Med spa and primary care site: Elementor build with 20+ service pages, JaneApp booking, Google Reviews integration and secure contact forms.</p><div class="tags"><span>Elementor</span><span>JaneApp</span><span>Reviews API</span></div><a class="pj-l" href="https://mdmedspabelred.com" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+
+    <article class="card pj reveal" data-c="client"><div class="pj-top g5"><i class="fa-solid fa-heart-pulse"></i><div class="dom">truwellnesscharlotte.com</div></div><div class="pj-b"><small>Client · Charlotte, NC, USA</small><h3>Tru Wellness Charlotte</h3><p>Medical wellness clinic on WordPress and Elementor with Healthie booking and PatientFi payment plans.</p><div class="tags"><span>Elementor</span><span>Healthie</span><span>PatientFi</span></div><a class="pj-l" href="https://truwellnesscharlotte.com" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+
+    <article class="card pj reveal" data-c="client"><div class="pj-top g3"><i class="fa-solid fa-star"></i><div class="dom">themdaesthetics.com</div></div><div class="pj-b"><small>Client · California, USA</small><h3>The MD Aesthetics</h3><p>Wellness and aesthetics clinic with Optimantra booking, a before/after gallery, memberships and a WooCommerce skincare shop.</p><div class="tags"><span>WooCommerce</span><span>Optimantra</span><span>Memberships</span></div><a class="pj-l" href="https://themdaesthetics.com" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+
+    <article class="card pj reveal" data-c="client"><div class="pj-top g1"><i class="fa-solid fa-face-smile-beam"></i><div class="dom">mdaesthetics.com.au</div></div><div class="pj-b"><small>Client · Perth, Australia</small><h3>MD Aesthetics Australia</h3><p>Cosmetic clinic: migrated from Squarespace to a custom WordPress build with treatment pages and Gettimely booking.</p><div class="tags"><span>Migration</span><span>Gettimely</span><span>Custom WP</span></div><a class="pj-l" href="https://mdaesthetics.com.au" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+
+    <article class="card pj reveal" data-c="client plugin"><div class="pj-top g4"><i class="fa-solid fa-taxi"></i><div class="dom">77cabs.com</div></div><div class="pj-b"><small>Client · Booking Platform</small><h3>77 Cabs</h3><p>Transportation booking platform with a custom dynamic fare-estimation plugin, location-based logic and WooCommerce payments.</p><div class="tags"><span>Custom Plugin</span><span>WooCommerce</span><span>Maps</span></div><a class="pj-l" href="https://77cabs.com" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+
+    <article class="card pj reveal" data-c="client"><div class="pj-top g8"><i class="fa-solid fa-diagram-project"></i><div class="dom">optimuserp.tech</div></div><div class="pj-b"><small>Client · Enterprise</small><h3>Optimus ERP</h3><p>Enterprise ERP website with custom post types, role-based admin workflows and CRM data synchronisation.</p><div class="tags"><span>Custom Post Types</span><span>CRM</span><span>Roles</span></div><a class="pj-l" href="https://optimuserp.tech" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+
+    <article class="card pj reveal" data-c="client"><div class="pj-top g5"><i class="fa-solid fa-sitemap"></i><div class="dom">indmarkgroup.com</div></div><div class="pj-b"><small>Client · Multisite Network</small><h3>Indmark Group</h3><p>WordPress Multisite network with multiple subdomains, shared user sessions and centralised administration.</p><div class="tags"><span>Multisite</span><span>SSO</span><span>Admin</span></div><a class="pj-l" href="https://indmarkgroup.com" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+
+    <article class="card pj reveal" data-c="client plugin"><div class="pj-top g7"><i class="fa-solid fa-plane-departure"></i><div class="dom">flight-ticket.world</div></div><div class="pj-b"><small>Client · Custom Plugin</small><h3>Flight Ticket World</h3><p>Custom OOP PHP plugin integrating a flight search API with live pricing and availability, error handling and fallback caching.</p><div class="tags"><span>OOP PHP</span><span>REST API</span><span>Caching</span></div><a class="pj-l" href="https://flight-ticket.world" target="_blank" rel="noopener">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+  </div>
+  <p class="reveal" style="margin-top:34px;color:var(--mu);text-align:center;">+ 40 more live websites available on request.</p>
+</div></section>
+
+<!-- EXPERIENCE -->
+<section id="experience"><div class="ctr">
+  <div class="reveal"><div class="eyebrow">Career</div><h2 class="sec-h">Work <span class="grad-t">experience</span></h2></div>
+  <div class="tl">
+    <div class="ti reveal"><div class="dt">JUL 2025 — MAY 2026</div><h3>WordPress Developer</h3><div class="co">Timus Consultations · Remote, international clients</div><ul><li>Developed and maintained high-traffic WordPress sites with custom PHP functionality.</li><li>Built custom post types, meta boxes, shortcodes and admin interfaces.</li><li>Implemented REST API integrations connecting WordPress to CRM, booking and payment services.</li><li>Resolved 80+ front-end and back-end issues, cutting client-reported bugs by about 40%.</li></ul></div>
+    <div class="ti reveal"><div class="dt">SEP 2024 — JUN 2025</div><h3>WordPress Developer</h3><div class="co">Udyot Solution · Remote</div><ul><li>Delivered 30+ WordPress websites, reducing average page load time by 35% and lifting Lighthouse from ~60 to 90+.</li><li>Built custom themes and plugins with OOP PHP, hooks, filters and custom post types.</li><li>Implemented Redis and CDN caching plus on-page SEO for Core Web Vitals.</li><li>100% on-time delivery across multiple concurrent client projects.</li></ul></div>
+    <div class="ti reveal"><div class="dt">MAY 2024 — SEP 2024</div><h3>WordPress Developer</h3><div class="co">Life Balance &amp; Spujah.com · UAE, Remote</div><ul><li>Built a WordPress e-learning platform with course management and WooCommerce payments.</li><li>Created custom Elementor layouts and optimised performance and mobile responsiveness.</li></ul></div>
+    <div class="ti reveal"><div class="dt">APR 2020 — APR 2024</div><h3>WordPress Developer / Website Designer</h3><div class="co">VedicAyurveda · New Delhi</div><ul><li>Led end-to-end development of 15+ wellness and e-learning websites over 4 years.</li><li>Integrated WooCommerce stores, LMS course systems and custom membership content.</li><li>Improved UI/UX, SEO rankings and site performance.</li></ul></div>
+    <div class="ti reveal" style="padding-bottom:0"><div class="dt">JUL 2018 — MAR 2019</div><h3>Web Designer / WordPress Developer</h3><div class="co">Beta Soft Technology · New Delhi</div><ul><li>Built educational and content-rich WordPress websites with cross-browser compatibility.</li><li>Resolved plugin conflicts, front-end bugs and rendering issues.</li></ul></div>
+  </div>
+</div></section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-top:40px"><div class="ctr">
+  <div class="ct reveal">
+    <div>
+      <div class="eyebrow">Get in touch</div>
+      <h2 class="sec-h">Have a project in mind? <span class="grad-t">Let's talk.</span></h2>
+      <p class="sec-p" style="margin-bottom:26px;">Need a fast WordPress website, a custom plugin, or an AI-powered build workflow? Message me — I usually reply the same day.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a class="btn btn-p" href="https://wa.me/918851471308?text=Hi%20Rishabh%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp me</a>
+        <a class="btn btn-g" href="assets/Rishabh_Sharma_Senior_WordPress_Developer_CV.pdf" download><i class="fa-solid fa-download"></i> Senior Dev CV</a>
+      </div>
+    </div>
+    <div class="cl">
+      <a href="mailto:rishabsharmadev6@gmail.com"><i class="fa-solid fa-envelope"></i>rishabsharmadev6@gmail.com</a>
+      <a href="tel:+918851471308"><i class="fa-solid fa-phone"></i>+91 88514 71308</a>
+      <a href="https://www.linkedin.com/in/rishab-sharma-dev" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>linkedin.com/in/rishab-sharma-dev</a>
+      <a href="https://github.com/TheRishabhteam" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>github.com/TheRishabhteam</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="ctr ft"><div class="logo"><span class="logo-m" style="width:34px;height:34px;font-size:14px;border-radius:10px;">RS</span> Rishabh Sharma</div><div>© <span id="yr"></span> Rishabh Sharma · New Delhi, India</div></div></footer>
+<a class="wa" href="https://wa.me/918851471308" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  $('#yr').textContent=new Date().getFullYear();
+  // theme
+  var root=document.documentElement,tb=$('#theme');
+  function setT(t){root.setAttribute('data-theme',t);tb.innerHTML='<i class="fa-solid fa-'+(t==='light'?'sun':'moon')+'"></i>';try{localStorage.setItem('rs_theme',t)}catch(e){}}
+  var st='dark';try{st=localStorage.getItem('rs_theme')||'dark'}catch(e){}setT(st);
+  tb.onclick=function(){setT(root.getAttribute('data-theme')==='light'?'dark':'light')};
+  // nav
+  var nav=$('#nav'),pb=$('#pb');
+  function sc(){var y=window.scrollY;nav.classList.toggle('sc',y>30);var h=document.body.scrollHeight-innerHeight;pb.style.width=(h>0?y/h*100:0)+'%'}
+  addEventListener('scroll',sc,{passive:true});sc();
+  $('#burger').onclick=function(){$('#navl').classList.toggle('open')};
+  $$('#navl a').forEach(function(a){a.addEventListener('click',function(){$('#navl').classList.remove('open')})});
+  // active link
+  var links=$$('a.nl'),secs=links.map(function(a){return $(a.getAttribute('href'))});
+  addEventListener('scroll',function(){var y=scrollY+120,cur=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})},{passive:true});
+  // typing
+  var roles=['WordPress Developer','Custom Theme & Plugin Engineer','Elementor Pro Specialist','Performance & Core Web Vitals','AI Website Tool Builder'],ri=0,ci=0,del=false,tp=$('#typed');
+  (function tick(){var w=roles[ri];ci+=del?-1:1;tp.textContent=w.slice(0,ci);var d=del?35:75;if(!del&&ci===w.length){del=true;d=1500}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=350}setTimeout(tick,d)})();
+  // marquee
+  var tech=['WordPress','Elementor Pro','WooCommerce','PHP','OOP PHP','MySQL','REST API','JavaScript','Tailwind CSS','Redis','CDN','Core Web Vitals','Multisite','ACF','WP-CLI','Git','AI Tools'];
+  $('#mq').innerHTML=tech.concat(tech).map(function(t){return '<span>'+t+'</span>'}).join('');
+  // reveal + counters
+  function count(el){var n=+el.getAttribute('data-n'),s=el.getAttribute('data-s')||'',t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');$$('[data-n]',e.target).forEach(count);io.unobserve(e.target)}})},{threshold:.12});
+    $$('.reveal').forEach(function(el){io.observe(el)});
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);so.unobserve(e.target)}})},{threshold:.5});
+    $$('.st b').forEach(function(b){so.observe(b)});
+  }else{$$('.reveal').forEach(function(el){el.classList.add('in')});$$('[data-n]').forEach(count)}
+  setTimeout(function(){$$('.reveal').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add('in')})},400);
+  // project filter
+  $$('#filters .fb').forEach(function(b){b.onclick=function(){$$('#filters .fb').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var f=b.getAttribute('data-f');$$('#pjg .pj').forEach(function(p){var c=(p.getAttribute('data-c')||'').split(' ');p.classList.toggle('hide',f!=='all'&&c.indexOf(f)<0);if(!p.classList.contains('hide'))p.classList.add('in')})}});
+})();
+</script>
+</body>
+</html>
