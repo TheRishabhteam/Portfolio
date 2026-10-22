@@ -353,7 +353,7 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mu);font-size:1
   var links=$$('a.nl'),secs=links.map(function(a){return $(a.getAttribute('href'))});
   addEventListener('scroll',function(){var y=scrollY+120,cur=-1;secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})},{passive:true});
   // typing
-  var roles=['WordPress Developer','Custom Theme & Plugin Engineer','Elementor Pro Specialist','Performance & Core Web Vitals','AI Website Tool Builder'],ri=0,ci=0,del=false,tp=$('#typed');
+  var roles=['WordPress Developer','Web Designer','Website Developer','Web Developer','Custom Theme & Plugin Engineer','Elementor Pro Specialist','Performance & Core Web Vitals','AI Website Tool Builder'],ri=0,ci=0,del=false,tp=$('#typed');
   (function tick(){var w=roles[ri];ci+=del?-1:1;tp.textContent=w.slice(0,ci);var d=del?35:75;if(!del&&ci===w.length){del=true;d=1500}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=350}setTimeout(tick,d)})();
   // marquee
   var tech=['WordPress','Elementor Pro','WooCommerce','PHP','OOP PHP','MySQL','REST API','JavaScript','Tailwind CSS','Redis','CDN','Core Web Vitals','Multisite','ACF','WP-CLI','Git','AI Tools'];
